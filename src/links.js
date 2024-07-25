@@ -1,6 +1,6 @@
-export const websiteLink = '#';
-export const tgLink = '#';
-export const xLink = '#';
+export const websiteLink = 'https://maincharacter.vip/';
+export const tgLink = 'https://t.me/CharacterErc20';
+export const xLink = 'https://x.com/CharacterErc20';
 export const dexScreenerLink = '#';
 export const dexToolsLink = '#';
 export const uniSwapLink = '#';

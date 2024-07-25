@@ -40,19 +40,11 @@ const MenuLink = styled(Link)`
     color: #ffffff;
     transition-duration: 0.5s;
   }
-  @media (max-width: 899px) {
+  /* @media (max-width: 899px) {
     display: block;
     padding: ${ (props) => props.p? props.p: '15px 0 15px 20px'};
     text-align: left;
-  }
-  &:last-child {
-    border-width: 0px;
-    background: red;
-    width: calc(100% - 40px);
-    margin: 15px auto;
-    padding: 10px 20px;
-    text-align: center;
-  }
+  } */
 `;
 
 const DrawerBox = styled(Box)`

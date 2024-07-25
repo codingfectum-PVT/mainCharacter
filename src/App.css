@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family:'primary';
+  src: url(./assets/font/Anton-Regular.woff);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 600px) {
+  .MuiTypography-h2{
+    font-size: 50px !important;
+  }
+  .MuiTypography-h5{
+    font-size: 20px !important;
+  }
+  
 }
