@@ -18,12 +18,15 @@ const SectionWrapper = emotionStyled(Box)`
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    // position: relative;
+    position: relative;
     overflow: hidden;
     
-    @media (max-width: 600px){
+    >div>div>div{
+        padding: 9% 4%;
+    }
+    @media (max-width: 900px){
         background: url(${bgMB});
-    background-position: top center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     }
@@ -39,28 +42,38 @@ const Image = emotionStyled.img`
 `
 const TextBox = emotionStyled(Box)`
     position: absolute;
-    left: 18%;
-    top: 10%;
+    left: 13%;
+    top: 13%;
     background: url(${aboutThink});
     background-size: 100% 100%;
-    padding: 20px 50px 50px 20px;
-    max-width: 430px;
+    padding: 30px 60px 60px 30px;
+    max-width: 40vw;
     z-index: 2;
     
-    @media (max-width: 600px){
-        left: 3%; 
+    >p{
+        font-size: 1.5vw !important;
+        @media (max-width: 900px){
+            font-size: 30px !important;
+        }
+        @media (max-width: 600px){
+            font-size: 18px !important;
+        }
+    }
+    @media (max-width: 900px){
+        top: 8%;
+        left: 4%; 
         background: url(${aboutThinkMB});
         background-size: 100% 100%;
-        
+        max-width: 90vw;
     }  
 `
 
 const About = () => {
   return (
     <SectionWrapper>
-        <Container maxWidth="xl">
+        {/* <Container maxWidth="xl">
             <Grid container>
-                <Grid xs={12} position='relative' minHeight='100vh'>
+                <Grid xs={12} position='relative' minHeight='100vh'> */}
                     <TextBox>
                         <Typography variant='body1' fontWeight={800}>Main Character empowers you to break free from the matrix. We encourage you to be the hero, not just another NPC. Join us and be an MC in your own story!</Typography>
                         <Box style={{marginTop: 15}}>
@@ -72,9 +85,9 @@ const About = () => {
                             </MenuLink>
                         </Box>
                     </TextBox>
-                </Grid>
+                {/* </Grid>
             </Grid>
-        </Container>
+        </Container> */}
         
         {/* <Image src={{xs:bgMB, sm: about}} alter="About Character" /> */}
     </SectionWrapper>

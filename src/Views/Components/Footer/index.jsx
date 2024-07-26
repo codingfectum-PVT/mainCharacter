@@ -20,8 +20,8 @@ const Footer = () => {
                 </Box>
             </Grid>
             <Grid xs={12} sm={6} textAlign={{xs: 'center',sm:'right'}}>
-                <MenuLink href='mailto:info@maincharacter.com' style={{padding: 0,textTransform: 'lowercase', marginRight: 20}}>
-                info@maincharacter.com
+                <MenuLink href='mailto:info@maincharacter.vip' style={{padding: 0,textTransform: 'lowercase', marginRight: 20}}>
+                info@maincharacter.vip
                 </MenuLink>
             </Grid>
         </Grid>
